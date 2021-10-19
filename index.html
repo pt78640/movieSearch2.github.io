@@ -60,14 +60,14 @@
         name.textContent=`Title: ${item.Title}`;
         let rating=document.createElement("p");
         rating.textContent=`Ratings: ${item.Ratings[0].Value}`;
-        let lang=document.createElement("p");
-        lang.textContent=`Language: ${item.Language}`;
+        let p=document.createElement("p");
+        p.textContent=`Language: ${item.Language}`;
         
         let actors=document.createElement("p");
         actors.textContent=`Actor: ${item.Actors}`;
         
 
-        div.append(name,img,actors,lang,rating);
+        div.append(name,img,actors,p,rating);
 
         data.append(div);
     }
